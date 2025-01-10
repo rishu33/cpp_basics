@@ -25,5 +25,3 @@ C++ is a powerful, high-performance programming language widely used in system p
 This repository is a personal learning space, but feel free to:
 - Suggest improvements or corrections by opening an issue or submitting a pull request.
 - Share additional resources or examples.
-
-Happy coding! 🚀
