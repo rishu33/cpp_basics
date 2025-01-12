@@ -6,18 +6,11 @@ WORKDIR /media/rishu33/ACTIVE_DATA/RWTH/docker/cpp_basics
 
 # Install required system dependencies
 RUN apt-get update && apt-get install -y \
-    # For C++ compilers and build tools
     build-essential \
-    # GNU Debugger
     gdb \
-    # Build system generator
     cmake \
-    # Version control system
     git \
-    # Text editor (optional)
-    nano \
-    # Alternative text editor (optional)
-    #vim && \            
+    nano && \
     rm -rf /var/lib/apt/lists/*
 
 # Set environment variables for localization (optional)
