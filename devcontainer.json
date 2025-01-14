@@ -1,0 +1,17 @@
+{
+    "name": "My Docker Container",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+    "vscode": {
+      "extensions": [
+        "formulahendry.code-runner", // Code Runner Extension
+        "ms-vscode.cpptools",  // C++ Extension for VS Code
+        "mhutchie.git-graph"  // Git Graph
+      ]
+    }
+  }
+
+  }
+  
