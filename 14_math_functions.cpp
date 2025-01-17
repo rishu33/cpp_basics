@@ -43,5 +43,8 @@ int main(){
     flr = floor(4.78);
     std::cout << "The Floor value of 4.78 is " << flr << '\n';
 
+    // More functions at below link
+    // https://cplusplus.com/reference/cmath/
+    
     return 0;
 }
