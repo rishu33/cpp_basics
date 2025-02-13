@@ -3,23 +3,33 @@
 
 int main(){
 
+    int num;
+    int guess;
+    int tries = 0;
+
     srand(time(0));
 
-    int num = (rand() % 5) + 1;
-    std::cout << "A Random number between 1 and 5 is : " << num << "\n";
+    num = (rand() % 10) + 1;
 
-    switch(num){
-        case 1: std::cout << "You win a Bumper Sticker!\n";
-        break;
-        case 2: std::cout << "You win a T-Shirt!\n";
-        break;
-        case 3: std::cout << "You win a Free Lunch!\n";
-        break;
-        case 4: std::cout << "You win a Gift Card!\n";
-        break;
-        case 5: std::cout << "You win a Concert Ticket!\n";
-        break;
-    }
+    std::cout << "********** Number Guessing Game **********\n";
+
+    do{
+        std::cout << "Enter a guess between 1 and 100: ";
+        std::cin >> guess;
+        tries ++;
+
+        if(guess > num){
+            std::cout << "Too High!\n";
+        }
+        else if(guess < num){
+            std::cout << "Too Low!\n";
+        }
+        else{
+            std::cout << "CORRECT! # of tries: " << tries << '\n';
+        }
+    }while(guess != num);
     
+    std::cout << "******************************************\n";
+
     return 0;
 }
