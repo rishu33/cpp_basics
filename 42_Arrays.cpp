@@ -41,6 +41,18 @@ int main(){
     std::cout << fruits[1] << ' ';
     std::cout << fruits[2] << '\n';
 
+    //Or an another data type
+
+    double prices[3];
+
+    prices[0] = 45.78;
+    prices[1] = 7.50;
+    prices[2] = 9.99;
+
+    std::cout << prices[0] << ' ';
+    std::cout << prices[1] << ' ';
+    std::cout << prices[2] << '\n';
+
     return 0;
 
 }
