@@ -23,7 +23,7 @@ int main(){
     int rows = sizeof(cars)/sizeof(cars[0]);
     int columns = sizeof(cars[0])/sizeof(cars[0][0]);
 
-    for(int i; i < rows; i++){
+    for(int i=0; i < rows; i++){
         std::cout << cars[i] << '\n';
     } // this loop will show the memory addresses of all 3 rows in the array cars.
 
