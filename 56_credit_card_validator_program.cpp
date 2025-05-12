@@ -1,5 +1,8 @@
 #include <iostream>
 
+int get_digit(const int number);
+int sum_odd_digits(const std::string cardNumber);
+int sum_even_digits(const std::string cardNumber);
 
 int main(){
 
@@ -13,51 +16,31 @@ int main(){
     // 4. Sum results from Step 2 and Step 3.
     // 5. If Step 4 is divisible by 10, # is Valid.
 
+    std::string cardNumber;
+    int result = 0;
+
+    std::cout << "Enter a credit card number: ";
+    std::cin >> cardNumber;
+
+    result = sum_even_digits(cardNumber) + sum_odd_digits(cardNumber);
     
-
-    std::string name = "Shahrukh";
-    int age = 25;
-
-    print_info(name, age);
-    print_info_2(name, age);
-    print_info_3(name, age);
-    print_info_4(name, age);
-
     return 0;
 
 }
 
-void print_info(std::string name, int age){
-    std::cout << name << '\n';
-    std::cout << age << '\n';
+
+int get_digit(const int number){
+    return 0;
 }
 
-void print_info_2(std::string name, int age){
-    name = "Unnamed";
-    age = 0;
-    std::cout << name << '\n';
-    std::cout << age << '\n';
+int sum_odd_digits(const std::string cardNumber){
+    return 0;
 }
 
-void print_info_3(const std::string name, const int age){
+int sum_even_digits(const std::string cardNumber){
     
-    // Below 2 lines will now show error since we are trying to change the value which is declared constant.
-    // name = " ";
-    // age = 0;
-    
-    // NOTE: still, only the copy of values of name and age inside the function are constant.
-    //       The original values in main function are not constant.
-    std::cout << name << '\n';
-    std::cout << age << '\n';
-}
+    int sum = 0;
 
-void print_info_4(const std::string &name, const int &age){
     
-    // Below 2 lines will now show error since we are trying to change the value which is declared constant.
-    // name = " ";
-    // age = 0;
-    
-    // NOTE: Here the addresses of original (from main function) values are set constant.
-    std::cout << name << '\n';
-    std::cout << age << '\n';
+    return 0;
 }
