@@ -24,23 +24,36 @@ int main(){
 
     result = sum_even_digits(cardNumber) + sum_odd_digits(cardNumber);
     
+    if(result % 10 == 0){
+        std::cout << "Card Number is Valid.\n";
+    }
+    else{
+        std::cout << "Card Number is NOT Valid.\n";
+    }
     return 0;
 
 }
 
 
 int get_digit(const int number){
-    return 0;
+    return (number % 10) + ((number / 10 ) % 10);
 }
 
 int sum_odd_digits(const std::string cardNumber){
-    return 0;
+    int sum = 0;
+
+    for(int i = cardNumber.size() - 1; i >= 0; i-=2){
+        sum += cardNumber[i] - '0';
+    }
+    return sum;
 }
 
 int sum_even_digits(const std::string cardNumber){
     
     int sum = 0;
 
-    
-    return 0;
+    for(int i = cardNumber.size() - 2; i >= 0; i-=2){
+        sum += get_digit((cardNumber[i] - '0') * 2);
+    }
+    return sum;
 }
