@@ -16,7 +16,7 @@ int main(){
     std::cout << "Address: " << pNum << '\n';
     std::cout << "Value: " << *pNum << '\n';
 
-    delete pNum; // to delete the pointer in heap
+    delete pNum; // to delete the pointer in heap when no longer using that memory space
     
     // Another Example
 
